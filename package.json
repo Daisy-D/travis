@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/server.js",
+    "test": "echo /'占位不测'/",
     "dev": "node app.js",
     "babel1": "babel app.es6 -o app.js",
     "babel2": "babel controller/indexController.es6 -o controller/indexController.js",

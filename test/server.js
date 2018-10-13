@@ -1,24 +1,33 @@
-'use strict';
+"use strict";
 
-var _supertest = require('supertest');
+// import requestsuper from 'supertest';
+// import app from '../app.js';
 
-var _supertest2 = _interopRequireDefault(_supertest);
-
-var _app = require('../app.js');
-
-var _app2 = _interopRequireDefault(_app);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function request() {
-    return (0, _supertest2.default)(_app2.default.listen());
+//用作测试
+function add(i) {
+    return i + 1;
 }
 
-describe('测试接口路由', function () {
-    it('点赞', function (done) {
-        request().get('/api/update').expect(200).end(function (err, res) {
-            if (res.data == 1) return done(err);
-            done();
-        });
+describe("基础测试用例", function () {
+    it("测试函数点赞", function () {
+        expect(add(1)).toBe(2);
     });
 });
+
+// function request() {
+//     return requestsuper(app.listen())
+// }
+// 
+// 
+// describe('测试接口路由', function () {
+//     it('点赞', function (done) {
+//         request()
+//             .get('/api/update')
+//             .expect(200)
+//             .end(function (err, res) {
+//                 if (res.data == 1) return done(err);
+//                 done();
+//             })
+//     });
+
+// })

@@ -37,4 +37,5 @@ class Thumb extends PraiseButton {
         super(num, element);
     }
 }
+
 export default Thumb
