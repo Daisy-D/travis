@@ -6,8 +6,8 @@ branches:
   - master
 before_install:
 - openssl aes-256-cbc -K $encrypted_e88def0e67df_key -iv $encrypted_e88def0e67df_iv
-  -in test_key.enc -out test_key -d
-- mv test_key ~/.ssh -f
-- chmod 600 ~/.ssh/test_key
+  -in daisy_rsa.enc -out daisy_rsa -d
+- mv daisy_rsa ~/.ssh -f
+- chmod 600 ~/.ssh/daisy_rsa
 after_script:
 - scp -o StrictHostKeyChecking=no app.js root@47.52.104.243:/demo
