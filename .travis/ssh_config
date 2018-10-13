@@ -1,0 +1,6 @@
+User root
+Host 47.52.104.243
+StrictHostKeyChecking no
+IdentityFile ~/.ssh/daisy_rsa
+
+IdentitiesOnly yes
