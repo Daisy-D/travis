@@ -1,0 +1,48 @@
+{
+  "name": "two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel1": "babel app.es6 -o app.js",
+    "babel2": "babel controller/indexController.es6 -o controller/indexController.js",
+    "babel3": "babel controller/initController.es6 -o controller/initController.js",
+    "babel4": "babel models/indexModel.es6 -o models/indexModel.js",
+    "babel5": "babel public/js/index.es6 -o public/js/index.js",
+    "babel6": "babel public/js/thumb.es6 -o public/js/thumb.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-request": "^1.0.0",
+    "koa-route": "^3.2.0",
+    "koa-router": "^7.2.1",
+    "mocha": "^3.5.3",
+    "qs": "^6.5.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "supertest": "^3.0.0",
+    "axios": "^0.16.2",
+    "co": "^4.6.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "koa-convert": "^1.2.0",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^4.0.1",
+    "koa-swig": "^2.2.1",
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
