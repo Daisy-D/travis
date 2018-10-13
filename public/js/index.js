@@ -26,8 +26,9 @@ var PraiseButton = function () {
             var _this = this;
 
             this.element.click(function () {
-                // this.num = addnum(this.num);
-                _this.num++;
+                // this.num = updateNum();
+                _this.num = addnum(_this.num);
+                // this.num++;
                 if (_this.num % 2 == 0) {
                     _this.element.css('font-size', '80px');
                     $('#animation').addClass('num');

@@ -5,8 +5,9 @@ class PraiseButton {
     }
     clickAction() {
         this.element.click(() => {
-            // this.num = addnum(this.num);
-            this.num++;
+            // this.num = updateNum();
+            this.num = addnum(this.num);
+            // this.num++;
             if (this.num % 2 == 0) {
                 this.element.css('font-size', '80px');
                 $('#animation').addClass('num');

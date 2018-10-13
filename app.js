@@ -1,5 +1,9 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _babelPolyfill = require("babel-polyfill");
 
 var _babelPolyfill2 = _interopRequireDefault(_babelPolyfill);
@@ -51,3 +55,4 @@ app.context.render = _co2.default.wrap((0, _koaSwig2.default)({
 }));
 app.use((0, _koaStatic2.default)(_config2.default.get('staticDir')));
 app.listen(_config2.default.get('port'));
+exports.default = app;
