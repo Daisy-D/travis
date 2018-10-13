@@ -3,7 +3,7 @@ const initController = {
   init(app, router) {
     app.use(router(function (_) {
       _.get('/index', index.index());
-      _.get('/update', index.update());
+      _.get('/api/update', index.update());
     }));
   }
 }

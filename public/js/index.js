@@ -34,6 +34,15 @@ var PraiseButton = function () {
                     $('#animation').addClass('num');
                     setTimeout(function () {
                         $('#animation').removeClass('num');
+                        axios.get('/api/update', {
+                            params: {
+                                id: 1
+                            }
+                        }).then(function (response) {
+                            console.log(response);
+                        }).catch(function (error) {
+                            console.log(error);
+                        });
                     }, 100);
                 } else {
                     _this.element.css('font-size', '100px');

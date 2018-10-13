@@ -8,7 +8,7 @@ function request() {
 describe('测试接口路由', function () {
     it('点赞', function (done) {
         request()
-            .get('/update')
+            .get('/api/update')
             .expect(200)
             .end(function (err, res) {
                 if (res.data == 1) return done(err);

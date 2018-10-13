@@ -13,6 +13,17 @@ class PraiseButton {
                 $('#animation').addClass('num');
                 setTimeout(() => {
                     $('#animation').removeClass('num');
+                    axios.get('/api/update', {
+                            params: {
+                                id: 1
+                            }
+                        })
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
                 }, 100)
             } else {
                 this.element.css('font-size', '100px');

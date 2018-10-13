@@ -44,8 +44,7 @@ var indexModel = function () {
           // }
           // console.log(info)
         }).catch(function (err) {
-          console.log(222);
-          console.log(err);
+          console.log(222, err);
         });
       });
     }
