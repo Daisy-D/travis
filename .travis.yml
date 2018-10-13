@@ -8,4 +8,4 @@ before_install:
     -in daisy_rsa.enc -out daisy_rsa -d
 
 after_script:
-  - scp -o StrictHostKeyChecking=no app.js root@47.52.104.243/demo
+  - scp -o StrictHostKeyChecking=no app.js root@47.52.104.243:/demo
