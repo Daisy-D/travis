@@ -6,6 +6,6 @@ node_js:
 before_install:
   - openssl aes-256-cbc -K $encrypted_e88def0e67df_key -iv $encrypted_e88def0e67df_iv
     -in daisy_rsa.enc -out daisy_rsa -d
-    
+
 after_script:
-  - scp -o StrictHostKeyChecking=no index.js root@47.52.104.243/demo
+  - scp -o StrictHostKeyChecking=no app.js root@47.52.104.243/demo
