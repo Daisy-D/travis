@@ -1,6 +1,6 @@
 "use strict";
 
-var _Chai = require("Chai");
+var _chai = require("chai");
 
 //用作测试
 function add(i) {
@@ -11,7 +11,7 @@ function add(i) {
 
 describe("基础测试用例", function () {
     it("测试函数点赞", function () {
-        (0, _Chai.expect)(add(1)).to.equal(2);
+        (0, _chai.expect)(add(1)).to.equal(2);
     });
 });
 

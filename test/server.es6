@@ -1,6 +1,6 @@
 // import requestsuper from 'supertest';
 // import app from '../app.js';
-import {expect} from 'Chai';
+import {expect} from 'chai';
 
 //用作测试
 function add(i) {
