@@ -17,6 +17,6 @@ before_install:
 
 - eval  $(ssh-agent)
 - ssh-add ~/.ssh/daisy_rsa
-cp .travis/ssh_config ~/.ssh/config
+- cp .travis/ssh_config ~/.ssh/config
 after_script:
 - scp -o StrictHostKeyChecking=no app.js root@47.52.104.243:/demo
