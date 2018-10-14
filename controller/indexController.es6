@@ -12,6 +12,13 @@ const indexController = {
       const indexM = new indexModel();
       ctx.body = await indexM.updateNum();
     }
+  },
+  error(){
+    return async (ctx, next) => {
+      ctx.body = await ctx.render('index.html', {
+        title: '错误'
+      })
+    }
   }
 }
 export default indexController

@@ -4,6 +4,7 @@ const initController = {
     app.use(router(function (_) {
       _.get('/index', index.index());
       _.get('/api/update', index.update());
+      _.get('*', index.error());
     }));
   }
 }

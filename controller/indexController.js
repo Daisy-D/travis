@@ -72,6 +72,36 @@ var indexController = {
         return _ref2.apply(this, arguments);
       };
     }();
+  },
+  error: function error() {
+    var _this3 = this;
+
+    return function () {
+      var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(ctx, next) {
+        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return ctx.render('index.html', {
+                  title: '错误'
+                });
+
+              case 2:
+                ctx.body = _context3.sent;
+
+              case 3:
+              case 'end':
+                return _context3.stop();
+            }
+          }
+        }, _callee3, _this3);
+      }));
+
+      return function (_x5, _x6) {
+        return _ref3.apply(this, arguments);
+      };
+    }();
   }
 };
 exports.default = indexController;
