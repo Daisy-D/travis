@@ -27,17 +27,17 @@ var PraiseButton = function () {
 
             this.element.click(function () {
                 // this.num = updateNum();
-                _this.num = addnum(_this.num);
-                // this.num++;
+                // this.num = addnum(this.num);
+                _this.num++;
                 if (_this.num % 2 == 0) {
                     _this.element.css('font-size', '80px');
                     $('#animation').addClass('num');
                     setTimeout(function () {
                         $('#animation').removeClass('num');
                         axios.get('/api/update', {
-                            params: {
-                                id: 1
-                            }
+                            // params: {
+                            //     id: 1
+                            // }
                         }).then(function (response) {
                             console.log(response);
                         }).catch(function (error) {
