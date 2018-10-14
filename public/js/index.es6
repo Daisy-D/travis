@@ -14,9 +14,9 @@ class PraiseButton {
                 setTimeout(() => {
                     $('#animation').removeClass('num');
                     axios.get('/api/update', {
-                            params: {
-                                id: 1
-                            }
+                            // params: {
+                            //     id: 1
+                            // }
                         })
                         .then(function (response) {
                             console.log(response);

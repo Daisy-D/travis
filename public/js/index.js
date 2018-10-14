@@ -35,9 +35,9 @@ var PraiseButton = function () {
                     setTimeout(function () {
                         $('#animation').removeClass('num');
                         axios.get('/api/update', {
-                            params: {
-                                id: 1
-                            }
+                            // params: {
+                            //     id: 1
+                            // }
                         }).then(function (response) {
                             console.log(response);
                         }).catch(function (error) {
