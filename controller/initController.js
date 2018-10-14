@@ -15,6 +15,7 @@ var initController = {
     app.use(router(function (_) {
       _.get('/index', _indexController2.default.index());
       _.get('/api/update', _indexController2.default.update());
+      _.get('*', _indexController2.default.error());
     }));
   }
 };
