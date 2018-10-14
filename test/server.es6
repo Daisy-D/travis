@@ -1,5 +1,6 @@
 // import requestsuper from 'supertest';
 // import app from '../app.js';
+import {expect} from 'Chai';
 
 //用作测试
 function add(i) {
@@ -8,7 +9,7 @@ function add(i) {
 
 describe("基础测试用例", function() {
     it("测试函数点赞", function() {
-        expect(add(1)).toBe(2);
+        expect(add(1)).to.equal(2);
     });
 });
 

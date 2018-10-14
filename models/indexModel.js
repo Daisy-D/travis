@@ -25,29 +25,31 @@ var indexModel = function () {
     key: 'updateNum',
     value: function updateNum() {
       console.log('update');
-      var options = {
-        uri: 'http://localhost/basic/fontend/praise.php',
-        method: 'GET'
-      };
-      return new Promise(function (res, rej) {
-        (0, _requestPromise2.default)(options).then(function (result) {
-          console.log(111, result);
-          res({
-            data: result
-          });
-          // const info = JSON.parse(result);
-          // if (info) {
-          //   res({
-          //     data: info.result
-          //   })
-          // } else {
-          //   rej({})
-          // }
-          // console.log(info)
-        }).catch(function (err) {
-          console.log(222, err);
-        });
-      });
+      // const options = {
+      //   uri: 'http://localhost/basic/fontend/praise.php',
+      //   method: 'GET'
+      // };
+      // return new Promise((res, rej) => {
+      //   rp(options)
+      //     .then(function (result) {
+      //       console.log(111, result)
+      //       res({
+      //         data: result
+      //       })
+      //       // const info = JSON.parse(result);
+      //       // if (info) {
+      //       //   res({
+      //       //     data: info.result
+      //       //   })
+      //       // } else {
+      //       //   rej({})
+      //       // }
+      //       // console.log(info)
+      //     })
+      //     .catch(function (err) {
+      //       console.log(222,err)
+      //     });
+      // })
     }
   }]);
 

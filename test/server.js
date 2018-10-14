@@ -1,16 +1,17 @@
 "use strict";
 
-// import requestsuper from 'supertest';
-// import app from '../app.js';
+var _Chai = require("Chai");
 
 //用作测试
 function add(i) {
     return i + 1;
-}
+} // import requestsuper from 'supertest';
+// import app from '../app.js';
+
 
 describe("基础测试用例", function () {
     it("测试函数点赞", function () {
-        expect(add(1)).toBe(2);
+        (0, _Chai.expect)(add(1)).to.equal(2);
     });
 });
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo /'占位不测'/",
+    "test": "mocha test/server.js",
     "dev": "node app.js",
     "babel1": "babel app.es6 -o app.js",
     "babel2": "babel controller/indexController.es6 -o controller/indexController.js",
@@ -21,14 +21,18 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "expect.js": "^0.3.1",
     "supertest": "^3.3.0"
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "chai": "^4.2.0",
     "co": "^4.6.0",
+    "jasmine": "^3.2.0",
     "jasmine-core": "^2.8.0",
-    "karma": "^1.7.1",
+    "karma": "^3.0.0",
     "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "koa": "^2.3.0",
